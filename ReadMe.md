@@ -17,7 +17,7 @@ This repo demonstrates how to use the new path-based routing feature in Azure Co
 
 The new-path based routing feature introduces the httpRoutingConfig which informs how traffic is routed in the application. For an example of the httpRoutingConfig, visit [infra/shared/apps-env.bicep](infra/shared/apps-env.bicep) in this repo.
 
-To use path-based routing, you will need to be on the 2024-10-02-preview version of the Azure Container Apps API.
+To use path-based routing, you will need to be on the 2024-10-02-preview version of the [Azure Container Apps API](https://learn.microsoft.com/rest/api/resource-manager/containerapps/http-route-config?view=rest-resource-manager-containerapps-2024-10-02-preview).
 
 The following is an example of how you can configure path based routing in your ARM/bicep templates.
 
@@ -72,6 +72,7 @@ resource httpRouteConfig 'Microsoft.App/managedEnvironments/httpRouteConfigs@202
 ```
 
 Details:
+The following properties are currently supported.
 - `{name}` for an httpRouteComponent should be unique across containerAppNames + containerAppJobNames in the cluster.
 - `rules` is an array of routing rules and their targets. They are evaluated in prority order based on the order they are defined.
 - `routes` is an array of routes that will be matched against the incoming request. The first route that matches will be used.
