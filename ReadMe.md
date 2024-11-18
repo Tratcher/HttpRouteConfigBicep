@@ -76,12 +76,13 @@ The following properties are currently supported.
 - `{name}` for an httpRouteComponent should be unique across containerAppNames + containerAppJobNames in the cluster.
 - `rules` is an array of routing rules and their targets. They are evaluated in prority order based on the order they are defined.
 - `routes` is an array of routes that will be matched against the incoming request. The first route that matches will be used.
-- `matches` is an array of matching rules. These can have type `prefix` or `exact`.
+- `matches` is an array of matching rules. These can have type `prefix` or `exact`. Any request that doesn't have a match will 404.
 - `prefixRewrite` the URL path to modify the URL prefix path to
 - `targets` takes one target application for which the routes in a rule will be forwaded to. These can only be container app names.
-- anything that doesn't have a match should 404
 
 ### What's next?
 - Support for custom domains for the HTTProutingConfig
 - Targeting of apps/revisions
 - Header-based routing
+
+### Feedback
