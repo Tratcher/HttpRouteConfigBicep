@@ -11,7 +11,7 @@ This repo demonstrates how to use the new path-based routing feature in Azure Co
 ### Deploy
 
 1. Clone the repo
-1. Run `azd up` to get started.
+1. Run `azd up` to get started and follow the prompts to deploy the repo.
 
 ### Configure path-based routing
 
@@ -81,6 +81,6 @@ Details:
 - anything that doesn't have a match should 404
 
 ### What's next?
--	Support for custom domains for the HTTProutingConfig
--	Targeting of apps/revisions
--	Header-based routing
+- Support for custom domains for the HTTProutingConfig
+- Targeting of apps/revisions
+- Header-based routing
