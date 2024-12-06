@@ -86,3 +86,5 @@ The following properties are currently supported.
 - Header-based routing
 
 ### Feedback
+
+For general feedback and questions please use [Roadmap: URL Based Routing](https://github.com/microsoft/azure-container-apps/issues/591#issuecomment-2523412443). To report bugs please use [Container Apps Issues](https://github.com/microsoft/azure-container-apps/issues).
