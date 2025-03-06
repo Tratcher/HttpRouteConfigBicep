@@ -1,3 +1,6 @@
+This sample has moved to https://github.com/Azure-Samples/HttpRouteConfigBicep
+
+
 # Path-based routing in Azure Container Apps
 
 This repo demonstrates how to use the new path-based routing feature in Azure Container Apps. It consists of three container apps and the bicep files to deploy them.
